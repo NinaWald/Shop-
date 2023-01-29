@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-size: 20px;
+}
+
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(212, 174, 58);
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    float: right;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    
+  }
+  
+  .topnav a.icon {
+    background: rgb(223, 185, 115);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color:rgb(73, 80, 80);
+  }
+  
+  .active {
+    background-color: #f19336;
+    color: white;
+    
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    color: #e99c49;
+  
+  }
+
+
+    .shirt {
+        width: 100%;
+        height: auto;
+    }  
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parent > div {
+    background-color: rgb(227, 212, 196);
+    color: rgb(198, 154, 9);
+    width: 250px;
+    height: 500px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+
+  .dropbtn {
+    background-color: #dec64c;
+    color: white;
+    padding: 16px;
+    font-size: 10px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #f8f361;}
+  
+
+
+  
+  header, footer, article {
+    padding: 1em;
+  }
+
+  header, footer {
+    background: rgb(247, 212, 114);
+    height: 10vh;
+    
+  }
+
+  footer {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  @media (min-width: 667px) and (max-width: 1024px) {
+    .parent {
+        flex-direction: row;
+    }
+  }
+
+
+  @media (min-width: 1025px) {
+    .parent {
+    flex-direction: row;
+  }
+}
