@@ -27,7 +27,7 @@
 
     <div class="main">
 
-        <video autoplay muted loop>
+        <video autoplay muted loop id="hero-video">
             <source src="./Sunset.mp4" type="video/mp4"> 
         </video>
         
@@ -67,8 +67,28 @@
                 <input type="submit">
               </form>
         </div>
-        <div>Hoodies</div>
-        <div>Jackets</div>
+        
+        <div>Hoodies
+            
+            <form>
+                 <input type="radio" id="long" name="fave" value="long hoodie">
+                 <label for="html">Long hoodie</label><br>
+                 <input type="radio" id="short" name="fave" value="short hoodie">
+                 <label for="css">Short hoodie</label><br>
+                 <input type="radio" id="medium" name="fave" value="medium hoodie">
+                 <label for="javascript">Medium hoodie</label>
+                 <input type="submit">
+            </form> 
+        </div>
+        <div>Log in 
+            <form action="/action_page.php">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd"><br><br>
+                <input type="submit" value="Submit">
+              </form>
+        </div>
         
     </div>
 
