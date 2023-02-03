@@ -11,6 +11,10 @@ header {
     font-size: 20px;
 }
 
+ #hero-video {
+  width: 100%;
+  
+ }
   
   .topnav {
     overflow: hidden;
